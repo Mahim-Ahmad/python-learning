@@ -42,3 +42,13 @@ name = ["mahim","tamim","sagor","masud","tayeb","mahim","mahim"]
 
 count=name.count("mahim")
 print(count)
+
+#rang function 
+number = list(range(10))
+print(number)
+ 
+number = list(range(5,10))
+print(number)
+ 
+number = list(range(2,31,2)) #last 2 use for different into two number
+print(number)
