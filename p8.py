@@ -13,11 +13,13 @@ else:
 
 
 name=input("enter number : ")
-pas=input("enter pass : ")
+
 
 
 if "mahim"==name:
+    pas=input("enter pass : ")
     if("123"==pas):
+        
         print("successfull login")
     else:
         print("wrong pass")
