@@ -5,6 +5,8 @@ class student:
     gpa=""
 karim=student()
 print(isinstance(karim,student))
+
+
 mahim=student()
 mahim.roll=705
 mahim.gpa=4.00
