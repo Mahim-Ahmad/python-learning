@@ -1,5 +1,5 @@
 #list input from user
-"""
+
 n=input("Enter a text of number: ")
 
 list= n.split()
@@ -8,7 +8,7 @@ sum=0
 for x in list:
     sum=sum+int(x)
 print(sum)
-"""
+
 #practice website pynative
 
 numofword=0
