@@ -1,17 +1,55 @@
-#scarch and replace
+ #meta character
 
 import re
 
-pattern=r"colour"
-text="my fav colour is red"
+pattern=r"colo..r"
 
-text2=re.sub(pattern,"color",text)
+if re.match(pattern,"colouar"):
+    print("match")
 
-print(text2)
 
-pattern=r"colour"
-text="my fav colour is red,colour is colour"
+pattern=r"^colo..r$"
 
-text2=re.sub(pattern,"color",text,count=3)
+if re.match(pattern,"colouar"):
+    print("match")
 
-print(text2)
+pattern=r"a*"
+
+if re.match(pattern,"acolouar"):
+    print("match")
+
+pattern=r"(ab)*"#0 ba akadik thaka
+
+if re.match(pattern,"acolouar"):
+    print("match")
+
+pattern=r"a+"# akta ba tar besi thaka
+
+if re.match(pattern,"colouar"):
+    print("match")
+
+pattern=r"a+b"#soro ab
+
+if re.match(pattern,"acolouar"):
+    print("match")
+
+pattern=r"a*b"
+
+if re.match(pattern,"acolouar"):
+    print("match")
+
+pattern=r"ice(-)cream"
+
+if re.match(pattern,"icecream"):
+    print("match")
+
+pattern=r"ice(-)?cream"#0 or 0ne space 
+
+if re.match(pattern,"icecream"):
+    print("match")
+
+pattern=r"a{1,3}$"#a use 1 to 3 time
+
+if re.match(pattern,"icecream"):
+    print("match")
+
